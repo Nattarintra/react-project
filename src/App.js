@@ -3,10 +3,9 @@ import { useEffect } from "react"
 import { createTheme } from "../src/theme"
 import { THEMES } from "../src/constants"
 import { StylesProvider, ThemeProvider } from "@mui/styles"
-//import { ThemeProvider } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import ProductView from "@views/ProductView/index"
-import Test from "@components/Test"
+import NavBar from "@components/NavBar"
 
 const App = () => {
   const theme = createTheme({
@@ -27,7 +26,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<ProductView />} />
-            <Route path="test" element={<Test />} />
+            <Route path="test" element={<NavBar />} />
           </Routes>
         </BrowserRouter>
       </StylesProvider>
