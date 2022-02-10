@@ -7,6 +7,7 @@ import Container from "@mui/material/Container"
 
 import PageWhiteSpace from "@components/PageWhiteSpace"
 import ProductCard from "@components/ProductCard"
+import BackdropLoading from "@components/BackdropLoading"
 
 const useStyles = makeStyles(_ =>
   createStyles({
@@ -21,6 +22,7 @@ const ProductView = ({ className }) => {
       <PageWhiteSpace>
         <Container>
           <ProductCard />
+          <BackdropLoading />
         </Container>
       </PageWhiteSpace>
     </div>
