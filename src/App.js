@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import "./App.css"
 import theme from "../src/theme/theme"
 import { StylesProvider, ThemeProvider } from "@mui/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import ProductView from "@views/ProductView/index"
-import NavBar from "@components/NavBar"
+import NavBar from "@components/navbar/NavBar"
 import Test from "@components/Test"
 
 const App = () => {
