@@ -1,3 +1,20 @@
 .card {
-  border: solid 1px tomato;
+  /* border: solid 1px tomato; */
+  max-width: 345px;
+  min-height: 200px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 25%);
+}
+.media-card {
+  /* border: dashed 1px green; */
+  /* max-height: ; */
+  height: 140px;
+  border-bottom: 5px solid #44318d;
+}
+.content-card {
+  padding: 16px;
+}
+.title-card {
+  color: rgba(0, 0, 0, 0.87);
 }

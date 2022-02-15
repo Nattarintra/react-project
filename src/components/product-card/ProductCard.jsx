@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "@components/button/Button"
 
 const ProductCard = ({ id, title = "This is product title", imageURL = `/images/default.png`, price = 123, onClick }) => {
   console.log(imageURL)
@@ -8,13 +9,16 @@ const ProductCard = ({ id, title = "This is product title", imageURL = `/images/
         <div className="content-card-wrap">
           <div className="media-card" styles={{ backgroundImage: `url(${imageURL})` }} />
           <div className="content-card">
-            <div className="title-card">{title}</div>
-            <div className="price-card">{price}</div>
+            <div className="title-card">
+              <h4>{title}</h4>
+            </div>
+            <div className="price-card">
+              <p>Price {price} </p>
+            </div>
           </div>
         </div>
-        <div className="btn">
-          <button>add to cart</button>
-        </div>
+
+        <Button btnText="add to cart" />
       </div>
     </>
   )
