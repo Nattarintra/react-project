@@ -7,7 +7,7 @@ const ProductCard = ({ id, title = "This is product title", imageURL = `/images/
     <>
       <div className="card">
         <div className="content-card-wrap">
-          <div className="media-card" styles={{ backgroundImage: `url(${imageURL})` }} />
+          <div className="media-card" style={{ backgroundImage: `url(${imageURL})`, height: "256px", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
           <div className="content-card">
             <div className="title-card">
               <h4>{title}</h4>
