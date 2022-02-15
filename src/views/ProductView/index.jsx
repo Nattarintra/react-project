@@ -6,7 +6,7 @@ import Button from "@mui/material/Button"
 import Container from "@mui/material/Container"
 
 import PageWhiteSpace from "@components/PageWhiteSpace"
-import ProductCard from "@components/ProductCard"
+import ProductCard from "@components/product-card/ProductCard"
 
 const useStyles = makeStyles(_ =>
   createStyles({
