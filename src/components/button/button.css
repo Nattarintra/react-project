@@ -1,7 +1,7 @@
 .btn {
   padding: 16px;
 }
-button {
+.btn-primary {
   padding: 8px 11px;
   text-transform: uppercase;
   background-color: #44318d;

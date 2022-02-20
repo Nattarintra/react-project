@@ -1,0 +1,258 @@
+[
+  {
+    "id": 22565423428,
+    "title": "SV 8GB USB Flash Memory E100",
+    "imageUrl": "https://images.unsplash.com/photo-1644955876498-bcb2dddb8645?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+
+    "prices": [
+      {
+        "amount": 159.92,
+        "currency": "SEK"
+      },
+      {
+        "amount": 19.99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423394,
+    "title": "Litware Wireless Mouse M35",
+    "imageUrl": "https://unsplash.com/photos/ynfNg8H8MxE",
+
+    "prices": [
+      {
+        "amount": 239.6,
+        "currency": "SEK"
+      },
+      {
+        "amount": 29.95,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423421,
+    "title": "SV Keyboard E90",
+    "imageUrl": "https://unsplash.com/photos/5NX5x2-O7KU",
+
+    "prices": [
+      {
+        "amount": 333.84,
+        "currency": "SEK"
+      },
+      {
+        "amount": 41.73,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423368,
+    "title": "Proseware Ink Jet Wireless Printer M400",
+    "imageUrl": "https://unsplash.com/photos/y8wjQZ9XP4A",
+
+    "prices": [
+      {
+        "amount": 1032,
+        "currency": "SEK"
+      },
+      {
+        "amount": 129,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423204,
+    "title": "Fabrikam Tablet M50",
+    "imageUrl": "/images/22565423204.png",
+
+    "prices": [
+      {
+        "amount": 792,
+        "currency": "SEK"
+      },
+      {
+        "amount": 99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423328,
+    "title": "WWI LCD17 E200",
+    "imageUrl": "/images/22565423328.png",
+
+    "prices": [
+      {
+        "amount": 792,
+        "currency": "SEK"
+      },
+      {
+        "amount": 99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423456,
+    "title": "A. Datum Compact Digital Camera M200",
+    "imageUrl": "/images/22565423456.png",
+
+    "prices": [
+      {
+        "amount": 1032,
+        "currency": "SEK"
+      },
+      {
+        "amount": 129,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423255,
+    "title": "WWI Desktop PC1.80 E1800",
+    "imageUrl": "/images/22565423255.png",
+
+    "prices": [
+      {
+        "amount": 1839.2,
+        "currency": "SEK"
+      },
+      {
+        "amount": 229.9,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423121,
+    "title": "Southridge Video Laptop8.9 E0890",
+    "imageUrl": "/images/22565423121.png",
+
+    "prices": [
+      {
+        "amount": 2608,
+        "currency": "SEK"
+      },
+      {
+        "amount": 326,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423906,
+    "title": "Litware 4-Line Cordless Phone M203",
+    "imageUrl": "/images/22565423906.png",
+
+    "prices": [
+      {
+        "amount": 263.92,
+        "currency": "SEK"
+      },
+      {
+        "amount": 32.99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423803,
+    "title": "Fabrikam Bookshelf Speaker",
+    "imageUrl": "/images/22565423803.png",
+
+    "prices": [
+      {
+        "amount": 639.92,
+        "currency": "SEK"
+      },
+      {
+        "amount": 79.99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423658,
+    "title": "SV 8xDVD E100",
+    "imageUrl": "/images/22565423658.png",
+
+    "prices": [
+      {
+        "amount": 552,
+        "currency": "SEK"
+      },
+      {
+        "amount": 69,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423853,
+    "title": "Proseware Play Headphones",
+    "imageUrl": "/images/22565423853.png",
+
+    "prices": [
+      {
+        "amount": 799.92,
+        "currency": "SEK"
+      },
+      {
+        "amount": 99.99,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423591,
+    "title": "Fabrikam Social Videographer E200",
+    "imageUrl": "/images/22565423591.png",
+
+    "prices": [
+      {
+        "amount": 1320,
+        "currency": "SEK"
+      },
+      {
+        "amount": 165,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423532,
+    "title": "A. Datum SLR Camera X358",
+    "imageUrl": "/images/22565423532.png",
+
+    "prices": [
+      {
+        "amount": 4704,
+        "currency": "SEK"
+      },
+      {
+        "amount": 588,
+        "currency": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 22565423633,
+    "title": "Southridge Video 32",
+    "imageUrl": "/images/22565423633.png",
+
+    "prices": [
+      {
+        "amount": 3999.92,
+        "currency": "SEK"
+      },
+      {
+        "amount": 499.99,
+        "currency": "EUR"
+      }
+    ]
+  }
+]

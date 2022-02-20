@@ -8,9 +8,14 @@
 }
 .media-card {
   /* border: dashed 1px green; */
-  /* max-height: ; */
   height: 140px;
   border-bottom: 5px solid #44318d;
+}
+.product-image {
+  /* border: dashed 1px red; */
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .content-card {
   padding: 16px;
