@@ -1,3 +1,6 @@
 @import "@components/navbar/navbar";
 @import "@components/product-card/product-card";
 @import "@components/button/button";
+
+/* Views */
+@import "@views/ProductView/productItems";

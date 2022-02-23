@@ -1,8 +1,8 @@
 [
   {
     "id": 22565423428,
-    "title": "SV 8GB USB Flash Memory E100",
-    "imageUrl": "https://images.unsplash.com/photo-1644955876498-bcb2dddb8645?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "title": "Canon with lens",
+    "image": "/images/camera10.jpg",
 
     "prices": [
       {
@@ -17,8 +17,8 @@
   },
   {
     "id": 22565423394,
-    "title": "Litware Wireless Mouse M35",
-    "imageUrl": "https://unsplash.com/photos/ynfNg8H8MxE",
+    "title": "Film maker set",
+    "image": "/images/camera1.jpg",
 
     "prices": [
       {
@@ -33,8 +33,8 @@
   },
   {
     "id": 22565423421,
-    "title": "SV Keyboard E90",
-    "imageUrl": "https://unsplash.com/photos/5NX5x2-O7KU",
+    "title": "Fuji lens 23mm",
+    "image": "/images/camera2.jpg",
 
     "prices": [
       {
@@ -49,8 +49,8 @@
   },
   {
     "id": 22565423368,
-    "title": "Proseware Ink Jet Wireless Printer M400",
-    "imageUrl": "https://unsplash.com/photos/y8wjQZ9XP4A",
+    "title": "Sony with lens f2.8",
+    "image": "/images/camera3.jpg",
 
     "prices": [
       {
@@ -65,8 +65,8 @@
   },
   {
     "id": 22565423204,
-    "title": "Fabrikam Tablet M50",
-    "imageUrl": "/images/22565423204.png",
+    "title": "Nikon with lens 85mm",
+    "image": "/images/camera4.jpg",
 
     "prices": [
       {
@@ -81,24 +81,24 @@
   },
   {
     "id": 22565423328,
-    "title": "WWI LCD17 E200",
-    "imageUrl": "/images/22565423328.png",
+    "title": "Nikon with lens",
+    "image": "/images/camera5.jpg",
 
     "prices": [
       {
-        "amount": 792,
+        "amount": 200,
         "currency": "SEK"
       },
       {
-        "amount": 99,
+        "amount": 22,
         "currency": "EUR"
       }
     ]
   },
   {
     "id": 22565423456,
-    "title": "A. Datum Compact Digital Camera M200",
-    "imageUrl": "/images/22565423456.png",
+    "title": "Best Leica camera",
+    "image": "/images/camera6.jpg",
 
     "prices": [
       {
@@ -113,8 +113,8 @@
   },
   {
     "id": 22565423255,
-    "title": "WWI Desktop PC1.80 E1800",
-    "imageUrl": "/images/22565423255.png",
+    "title": "Fuji xT10 best price",
+    "image": "/images/camera7.jpg",
 
     "prices": [
       {
@@ -129,8 +129,8 @@
   },
   {
     "id": 22565423121,
-    "title": "Southridge Video Laptop8.9 E0890",
-    "imageUrl": "/images/22565423121.png",
+    "title": "Sony a7s with a good price",
+    "image": "/images/camera8.jpg",
 
     "prices": [
       {
@@ -145,8 +145,8 @@
   },
   {
     "id": 22565423906,
-    "title": "Litware 4-Line Cordless Phone M203",
-    "imageUrl": "/images/22565423906.png",
+    "title": "Sony a7s new camera",
+    "image": "/images/camera9.jpg",
 
     "prices": [
       {
@@ -161,8 +161,8 @@
   },
   {
     "id": 22565423803,
-    "title": "Fabrikam Bookshelf Speaker",
-    "imageUrl": "/images/22565423803.png",
+    "title": "Sony a7s 6 months garantee",
+    "image": "/images/camera10.jpg",
 
     "prices": [
       {
@@ -177,8 +177,8 @@
   },
   {
     "id": 22565423658,
-    "title": "SV 8xDVD E100",
-    "imageUrl": "/images/22565423658.png",
+    "title": "Best Sony camera",
+    "image": "/images/camera11.jpg",
 
     "prices": [
       {
@@ -193,8 +193,8 @@
   },
   {
     "id": 22565423853,
-    "title": "Proseware Play Headphones",
-    "imageUrl": "/images/22565423853.png",
+    "title": "Canon EOS 5D",
+    "image": "/images/camera.jpg",
 
     "prices": [
       {
@@ -203,54 +203,6 @@
       },
       {
         "amount": 99.99,
-        "currency": "EUR"
-      }
-    ]
-  },
-  {
-    "id": 22565423591,
-    "title": "Fabrikam Social Videographer E200",
-    "imageUrl": "/images/22565423591.png",
-
-    "prices": [
-      {
-        "amount": 1320,
-        "currency": "SEK"
-      },
-      {
-        "amount": 165,
-        "currency": "EUR"
-      }
-    ]
-  },
-  {
-    "id": 22565423532,
-    "title": "A. Datum SLR Camera X358",
-    "imageUrl": "/images/22565423532.png",
-
-    "prices": [
-      {
-        "amount": 4704,
-        "currency": "SEK"
-      },
-      {
-        "amount": 588,
-        "currency": "EUR"
-      }
-    ]
-  },
-  {
-    "id": 22565423633,
-    "title": "Southridge Video 32",
-    "imageUrl": "/images/22565423633.png",
-
-    "prices": [
-      {
-        "amount": 3999.92,
-        "currency": "SEK"
-      },
-      {
-        "amount": 499.99,
         "currency": "EUR"
       }
     ]

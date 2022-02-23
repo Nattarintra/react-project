@@ -1,0 +1,8 @@
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid {
+  margin: 0 0 50px 0;
+  width: 33%;
+}
