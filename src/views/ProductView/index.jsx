@@ -1,29 +1,20 @@
 import React from "react"
-import clsx from "clsx"
-import { createStyles, makeStyles } from "@mui/styles"
 
 import Container from "@mui/material/Container"
 
 import PageWhiteSpace from "@components/PageWhiteSpace"
-import ProductCard from "@components/product-card/ProductCard"
-import NavBar from "@components/navbar/NavBar"
+import ProductItems from "./ProductItems"
+import MainLayout from "@layout/MainLayOut"
 
-const useStyles = makeStyles(_ =>
-  createStyles({
-    root: {}
-  })
-)
-const ProductView = ({ className }) => {
-  const classes = useStyles()
+const ProductView = () => {
   return (
-    <div className={clsx(classes.root, className)}>
-      <NavBar />
+    <MainLayout>
       <PageWhiteSpace>
         <Container>
-          <ProductCard />
+          <ProductItems />
         </Container>
       </PageWhiteSpace>
-    </div>
+    </MainLayout>
   )
 }
 export default ProductView
