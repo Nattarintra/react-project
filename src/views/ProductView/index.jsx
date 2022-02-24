@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Container from "@mui/material/Container"
 
@@ -7,6 +7,8 @@ import ProductItems from "./ProductItems"
 import MainLayout from "@layout/MainLayOut"
 
 const ProductView = () => {
+  const [cartItemQty, setCartItemQty] = useState(1)
+
   return (
     <MainLayout>
       <PageWhiteSpace>

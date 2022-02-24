@@ -30,7 +30,7 @@ const ProductCard = ({
         </div>
       </div>
 
-      <Button btnText="add to cart" />
+      <Button btnText="add to cart" onClick={onClick} />
     </div>
   )
 }
