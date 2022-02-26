@@ -6,8 +6,10 @@ import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import AccountCircle from "@mui/icons-material/AccountCircle"
+import Badge from "@mui/material/Badge"
 
-const NavBar = () => {
+const NavBar = ({ countQtyInCart }) => {
+  console.log(" NavBarQty ", countQtyInCart)
   return (
     <>
       <nav className="nav-wrapper">
@@ -17,10 +19,11 @@ const NavBar = () => {
               <p>React E-commerce</p>
             </div>
             <div className="nav-icon-wrapper nav-right">
-              <Link to="" className="icon-btn bage">
-                <ShoppingCartIcon />
-              </Link>
-
+              <Badge badgeContent={countQtyInCart} color="secondary">
+                <Link to="" className="icon-btn bage">
+                  <ShoppingCartIcon />
+                </Link>
+              </Badge>
               <Link to="" className="icon-btn accout-circle">
                 <AccountCircle />
               </Link>

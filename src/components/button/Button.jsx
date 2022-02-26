@@ -1,12 +1,10 @@
 import React from "react"
 
-const Button = ({ btnText, id, onClick }) => {
-  const handleClick = () => {
-    alert(onClick?.(id))
-  }
+const Button = ({ btnText, onChangeQty }) => {
+  //console.log("props from Button compo", handleOnChangeQty)
   return (
     <div className="btn ">
-      <button className="btn-primary" onClick={handleClick}>
+      <button className="btn-primary" onClick={onChangeQty}>
         <span>{btnText}</span>
       </button>
     </div>

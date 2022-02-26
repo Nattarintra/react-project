@@ -1,10 +1,10 @@
 import React from "react"
 import NavBar from "@components/navbar/NavBar"
 
-const MainLayOut = ({ children }) => {
+const MainLayOut = ({ children, countQtyInCart }) => {
   return (
     <div className="">
-      <NavBar />
+      <NavBar countQtyInCart={countQtyInCart} />
       {children}
     </div>
   )
