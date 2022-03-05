@@ -1,25 +1,16 @@
-import React, { useState } from "react"
+import React from "react"
 
 import Container from "@mui/material/Container"
-
 import PageWhiteSpace from "@components/PageWhiteSpace"
 import ProductItems from "./ProductItems"
 import MainLayout from "@layout/MainLayOut"
-import data from "@data/products"
 
-const ProductView = () => {
-  const products = data
-  const [countQtyInCart, setCountQtyInCart] = useState(null)
-
-  const handleChangeQty = () => {
-    setCountQtyInCart(countQtyInCart + 1)
-  }
-
+const ProductView = ({ products, cartItems, onAddToCart }) => {
   return (
-    <MainLayout countQtyInCart={countQtyInCart}>
+    <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <Container>
-          <ProductItems products={products} onChangeQty={handleChangeQty} countQtyInCart={countQtyInCart} />
+          <ProductItems products={products} onAddToCart={onAddToCart} cartItems={cartItems} />
         </Container>
       </PageWhiteSpace>
     </MainLayout>

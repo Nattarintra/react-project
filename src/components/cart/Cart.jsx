@@ -2,7 +2,7 @@ import React from "react"
 import Container from "@mui/material/Container"
 import { Link } from "react-router-dom"
 
-const Cart = ({ id, title = "This is product title", image = `/images/default.png`, prices = 123, countQtyInCart = 4 }) => {
+const Cart = ({ title, image, cartItems }) => {
   return (
     <div className="cart-wrapper">
       <Container>
@@ -16,7 +16,7 @@ const Cart = ({ id, title = "This is product title", image = `/images/default.pn
               <Link to="" className="cart-btn increase">
                 +
               </Link>
-              <div className="cart-btn cart-qty">{countQtyInCart}</div>
+              <div className="cart-btn cart-qty">{cartItems.lenght}</div>
               <Link to="" className="cart-btn decrease">
                 -
               </Link>
@@ -24,9 +24,7 @@ const Cart = ({ id, title = "This is product title", image = `/images/default.pn
                 x
               </Link>
             </div>
-            <div className="cart-btn cart-price">
-              {prices[0].amount} {prices[0].currency}
-            </div>
+            <div className="cart-btn cart-price">{/* {cartItems.prices[0].amount} {cartItems.prices[0].currency} */}</div>
           </div>
         </div>
         <div className="cart-total">Total</div>

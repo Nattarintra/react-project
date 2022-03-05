@@ -1,16 +1,21 @@
 import React from "react"
 import Cart from "@components/cart/Cart"
-import data from "@data/products"
 
-const CartItems = () => {
-  const products = data
+const CartItems = ({ cartItems, onAddToCart }) => {
+  console.log(" cart items id ", cartItems.id)
   return (
     <div className="">
-      {products.map(product => (
-        <div id={product.id} className="" key={product.id}>
-          <Cart title={product.title} image={product.image} prices={product.prices} />
-        </div>
-      ))}
+      {cartItems.length === 0 ? (
+        <div className="emptyCart">Your cart is empty</div>
+      ) : (
+        cartItems.map(item => {
+          return (
+            <div id={item.id} className="" key={item.id}>
+              <Cart title={item.title} image={item.image} prices={item.prices} cartItems={cartItems} onAddToCart={onAddToCart} />
+            </div>
+          )
+        })
+      )}
     </div>
   )
 }

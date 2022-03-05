@@ -9,9 +9,9 @@ const ProductCard = ({
     { amount: "", currency: "SEK" },
     { amount: "", currency: "EUR" }
   ],
-  onChangeQty,
+  onAddToCart,
 
-  countQtyInCart
+  cartItems
 }) => {
   return (
     <div className="card">
@@ -32,7 +32,7 @@ const ProductCard = ({
         </div>
       </div>
 
-      <Button btnText="add to cart" onChangeQty={onChangeQty} />
+      <Button btnText="add to cart" onClick={() => onAddToCart(id, title, image)} />
     </div>
   )
 }
