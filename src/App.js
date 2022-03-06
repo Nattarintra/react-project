@@ -16,7 +16,6 @@ const App = () => {
 
   const handleAddToCart = product => {
     setCartItems([...cartItems, product])
-    console.log("what?  ", product)
   }
 
   return (

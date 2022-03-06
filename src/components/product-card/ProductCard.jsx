@@ -1,39 +1,34 @@
 import React from "react"
 import Button from "@components/button/Button"
+import PropTypes from "prop-types"
 
-const ProductCard = ({
-  id,
-  title = "This is product title",
-  image = `/images/default.png`,
-  prices = [
-    { amount: "", currency: "SEK" },
-    { amount: "", currency: "EUR" }
-  ],
-  onAddToCart,
-
-  cartItems
-}) => {
+const ProductCard = ({ product, onAddToCart }) => {
   return (
     <div className="card">
       <div className="content-card-wrap">
         <div className="media-card">
-          <img className="product-image" src={image} alt={title} />
+          <img className="product-image" src={product.image} alt={product.title} />
         </div>
         <div className="content-card">
-          <p>{id}</p>
           <div className="title-card">
-            <p>{title}</p>
+            <p>{product.title}</p>
           </div>
           <div className="price-card">
-            <p>
-              Price {prices[0].amount} {prices[0].currency} | {prices[1].amount} {prices[1].currency}
-            </p>
+            {
+              <p>
+                Price {product.price.amount} {product.price.currency}
+              </p>
+            }
           </div>
         </div>
       </div>
 
-      <Button btnText="add to cart" onClick={() => onAddToCart(id, title, image)} />
+      <Button btnText="add to cart" onClick={() => onAddToCart({ product })} />
     </div>
   )
 }
 export default ProductCard
+ProductCard.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string
+}

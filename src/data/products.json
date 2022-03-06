@@ -4,207 +4,129 @@
     "title": "Canon with lens",
     "image": "/images/camera10.jpg",
 
-    "prices": [
-      {
-        "amount": 159.92,
-        "currency": "SEK"
-      },
-      {
-        "amount": 19.99,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 159.92,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423394,
     "title": "Film maker set",
     "image": "/images/camera1.jpg",
 
-    "prices": [
-      {
-        "amount": 239.6,
-        "currency": "SEK"
-      },
-      {
-        "amount": 29.95,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 239.6,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423421,
     "title": "Fuji lens 23mm",
     "image": "/images/camera2.jpg",
 
-    "prices": [
-      {
-        "amount": 333.84,
-        "currency": "SEK"
-      },
-      {
-        "amount": 41.73,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 333.84,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423368,
     "title": "Sony with lens f2.8",
     "image": "/images/camera3.jpg",
 
-    "prices": [
-      {
-        "amount": 1032,
-        "currency": "SEK"
-      },
-      {
-        "amount": 129,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 1032,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423204,
     "title": "Nikon with lens 85mm",
     "image": "/images/camera4.jpg",
 
-    "prices": [
-      {
-        "amount": 792,
-        "currency": "SEK"
-      },
-      {
-        "amount": 99,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 792,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423328,
     "title": "Nikon with lens",
     "image": "/images/camera5.jpg",
 
-    "prices": [
-      {
-        "amount": 200,
-        "currency": "SEK"
-      },
-      {
-        "amount": 22,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 200,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423456,
     "title": "Best Leica camera",
     "image": "/images/camera6.jpg",
 
-    "prices": [
-      {
-        "amount": 1032,
-        "currency": "SEK"
-      },
-      {
-        "amount": 129,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 1032,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423255,
     "title": "Fuji xT10 best price",
     "image": "/images/camera7.jpg",
 
-    "prices": [
-      {
-        "amount": 1839.2,
-        "currency": "SEK"
-      },
-      {
-        "amount": 229.9,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 1839.2,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423121,
     "title": "Sony a7s with a good price",
     "image": "/images/camera8.jpg",
 
-    "prices": [
-      {
-        "amount": 2608,
-        "currency": "SEK"
-      },
-      {
-        "amount": 326,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 2608,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423906,
     "title": "Sony a7s new camera",
     "image": "/images/camera9.jpg",
 
-    "prices": [
-      {
-        "amount": 263.92,
-        "currency": "SEK"
-      },
-      {
-        "amount": 32.99,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 263.92,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423803,
     "title": "Sony a7s 6 months garantee",
     "image": "/images/camera10.jpg",
 
-    "prices": [
-      {
-        "amount": 639.92,
-        "currency": "SEK"
-      },
-      {
-        "amount": 79.99,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 639.92,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423658,
     "title": "Best Sony camera",
     "image": "/images/camera11.jpg",
 
-    "prices": [
-      {
-        "amount": 552,
-        "currency": "SEK"
-      },
-      {
-        "amount": 69,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 552,
+      "currency": "SEK"
+    }
   },
   {
     "id": 22565423853,
     "title": "Canon EOS 5D",
     "image": "/images/camera.jpg",
 
-    "prices": [
-      {
-        "amount": 799.92,
-        "currency": "SEK"
-      },
-      {
-        "amount": 99.99,
-        "currency": "EUR"
-      }
-    ]
+    "price": {
+      "amount": 799.92,
+      "currency": "SEK"
+    }
   }
 ]

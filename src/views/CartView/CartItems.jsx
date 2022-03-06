@@ -2,7 +2,7 @@ import React from "react"
 import Cart from "@components/cart/Cart"
 
 const CartItems = ({ cartItems, onAddToCart }) => {
-  console.log(" cart items id ", cartItems.id)
+  //console.log(" cart items ", cartItems[0].product.id)
   return (
     <div className="">
       {cartItems.length === 0 ? (
@@ -10,8 +10,8 @@ const CartItems = ({ cartItems, onAddToCart }) => {
       ) : (
         cartItems.map(item => {
           return (
-            <div id={item.id} className="" key={item.id}>
-              <Cart title={item.title} image={item.image} prices={item.prices} cartItems={cartItems} onAddToCart={onAddToCart} />
+            <div id={item.id} className="" key={item.product.id}>
+              <Cart item={item} onAddToCart={onAddToCart} cartItems={cartItems} />
             </div>
           )
         })
