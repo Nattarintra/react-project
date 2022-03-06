@@ -13,13 +13,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           <div className="title-card">
             <p>{product.title}</p>
           </div>
-          <div className="price-card">
-            {
-              <p>
-                Price {product.price.amount} {product.price.currency}
-              </p>
-            }
-          </div>
+          <div className="price-card">{<p>Price {product.price} EUR</p>}</div>
         </div>
       </div>
 

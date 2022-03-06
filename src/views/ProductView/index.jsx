@@ -5,12 +5,12 @@ import PageWhiteSpace from "@components/PageWhiteSpace"
 import ProductItems from "./ProductItems"
 import MainLayout from "@layout/MainLayOut"
 
-const ProductView = ({ products, cartItems, onAddToCart }) => {
+const ProductView = ({ productsData, cartItems, onAddToCart }) => {
   return (
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <Container>
-          <ProductItems products={products} onAddToCart={onAddToCart} cartItems={cartItems} />
+          <ProductItems onAddToCart={onAddToCart} cartItems={cartItems} productsData={productsData} />
         </Container>
       </PageWhiteSpace>
     </MainLayout>

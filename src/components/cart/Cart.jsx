@@ -26,13 +26,7 @@ const Cart = ({ item, cartItems }) => {
                 x
               </Link>
             </div>
-            <div className="cart-btn cart-price">
-              {
-                <p>
-                  {item.product.price.amount} {item.product.price.currency}
-                </p>
-              }
-            </div>
+            <div className="cart-btn cart-price">{<p>{item.product.price} EUR</p>}</div>
           </div>
         </div>
         <div className="cart-total">Total</div>
