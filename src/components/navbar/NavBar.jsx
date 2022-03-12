@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import { Link } from "react-router-dom"
 
@@ -7,7 +7,6 @@ import Container from "@mui/material/Container"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import AccountCircle from "@mui/icons-material/AccountCircle"
 import Badge from "@mui/material/Badge"
-import CartView from "@views/CartView"
 
 const NavBar = ({ cartItems }) => {
   console.log(" NavBarQty ", cartItems)

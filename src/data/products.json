@@ -4,129 +4,90 @@
     "title": "Canon with lens",
     "image": "/images/camera10.jpg",
 
-    "price": {
-      "amount": 159.92,
-      "currency": "SEK"
-    }
+    "price": 159.92
   },
   {
     "id": 22565423394,
     "title": "Film maker set",
     "image": "/images/camera1.jpg",
 
-    "price": {
-      "amount": 239.6,
-      "currency": "SEK"
-    }
+    "price": 239.6
   },
   {
     "id": 22565423421,
     "title": "Fuji lens 23mm",
     "image": "/images/camera2.jpg",
 
-    "price": {
-      "amount": 333.84,
-      "currency": "SEK"
-    }
+    "price": 333.84
   },
   {
     "id": 22565423368,
     "title": "Sony with lens f2.8",
     "image": "/images/camera3.jpg",
 
-    "price": {
-      "amount": 1032,
-      "currency": "SEK"
-    }
+    "price": 1032
   },
   {
     "id": 22565423204,
     "title": "Nikon with lens 85mm",
     "image": "/images/camera4.jpg",
 
-    "price": {
-      "amount": 792,
-      "currency": "SEK"
-    }
+    "price": 792
   },
   {
     "id": 22565423328,
     "title": "Nikon with lens",
     "image": "/images/camera5.jpg",
 
-    "price": {
-      "amount": 200,
-      "currency": "SEK"
-    }
+    "price": 200
   },
   {
     "id": 22565423456,
     "title": "Best Leica camera",
     "image": "/images/camera6.jpg",
 
-    "price": {
-      "amount": 1032,
-      "currency": "SEK"
-    }
+    "price": 1032
   },
   {
     "id": 22565423255,
     "title": "Fuji xT10 best price",
     "image": "/images/camera7.jpg",
 
-    "price": {
-      "amount": 1839.2,
-      "currency": "SEK"
-    }
+    "price": 1839.2
   },
   {
     "id": 22565423121,
     "title": "Sony a7s with a good price",
     "image": "/images/camera8.jpg",
 
-    "price": {
-      "amount": 2608,
-      "currency": "SEK"
-    }
+    "price": 2608
   },
   {
     "id": 22565423906,
     "title": "Sony a7s new camera",
     "image": "/images/camera9.jpg",
 
-    "price": {
-      "amount": 263.92,
-      "currency": "SEK"
-    }
+    "price": 263.92
   },
   {
     "id": 22565423803,
     "title": "Sony a7s 6 months garantee",
     "image": "/images/camera10.jpg",
 
-    "price": {
-      "amount": 639.92,
-      "currency": "SEK"
-    }
+    "price": 639.92
   },
   {
     "id": 22565423658,
     "title": "Best Sony camera",
     "image": "/images/camera11.jpg",
 
-    "price": {
-      "amount": 552,
-      "currency": "SEK"
-    }
+    "price": 552
   },
   {
     "id": 22565423853,
     "title": "Canon EOS 5D",
     "image": "/images/camera.jpg",
 
-    "price": {
-      "amount": 799.92,
-      "currency": "SEK"
-    }
+    "price": 799.92
   }
 ]
