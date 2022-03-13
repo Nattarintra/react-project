@@ -1,9 +1,16 @@
 import React from "react"
-import ProductCard from "@components/product-card/ProductCard"
+import ProductCard from "components/product-card/ProductCard"
 import PropTypes from "prop-types"
-import { ProductAPI } from "@context/Context"
+import MainLayout from "layout/MainLayOut"
 
-const ProductItems = ({ onAddToCart, products }) => {
+const ProductItems = ({ onAddToCart, products, loading }) => {
+  if (loading) {
+    return (
+      <MainLayout>
+        <p>Loading...</p>
+      </MainLayout>
+    )
+  }
   //const { products } = ProductAPI()
   return (
     <div className="grid-wrapper">

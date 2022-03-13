@@ -1,9 +1,9 @@
 import React from "react"
 import Container from "@mui/material/Container"
-import PageWhiteSpace from "@components/PageWhiteSpace"
+import PageWhiteSpace from "components/PageWhiteSpace"
 import ProductItems from "./ProductItems"
-import MainLayout from "@layout/MainLayOut"
-import { ProductAPI } from "@context/Context"
+import MainLayout from "layout/MainLayOut"
+import { ProductAPI } from "context/Context"
 
 const ProductView = () => {
   const { products, cartItems, handleAddToCart, loading, error } = ProductAPI()
@@ -18,9 +18,9 @@ const ProductView = () => {
 
   if (error) {
     return (
-      <MainLayout>
+      <div>
         <p>Error fetching data </p>
-      </MainLayout>
+      </div>
     )
   }
 
@@ -28,7 +28,7 @@ const ProductView = () => {
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <Container>
-          <ProductItems onAddToCart={handleAddToCart} cartItems={cartItems} products={products} />
+          <ProductItems onAddToCart={handleAddToCart} cartItems={cartItems} products={products} loading={loading} />
         </Container>
       </PageWhiteSpace>
     </MainLayout>

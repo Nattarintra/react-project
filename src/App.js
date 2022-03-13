@@ -4,9 +4,9 @@ import "./App.css"
 import theme from "../src/theme/theme"
 import { StylesProvider, ThemeProvider } from "@mui/styles"
 import CssBaseline from "@mui/material/CssBaseline"
-import ProductView from "@views/ProductView/index"
-import CartView from "@views/CartView"
-import { ContextProvider } from "@context/Context"
+import ProductView from "views/ProductView/index"
+import CartView from "views/CartView"
+import { ContextProvider } from "context/Context"
 
 const App = () => {
   return (

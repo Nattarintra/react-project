@@ -1,15 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@components": ["./components/*"],
-      "@data": ["./data/*"],
-      "@layout": ["./layout/*"],
-      "@utils": ["./utils/*"],
-      "@views": ["./views/*"],
-      "@context": ["./context/*"]
-    }
+    "baseUrl": "src"
   },
   "exclude": ["node_modules", "**/node_modules/*", "build"],
-  "include": ["./src/**/*.jsx", "./src/**/*.js"]
+
+  "include": ["src"]
 }

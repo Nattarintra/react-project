@@ -1,8 +1,8 @@
 import React from "react"
-import PageWhiteSpace from "@components/PageWhiteSpace"
+import PageWhiteSpace from "components/PageWhiteSpace"
 import CartItems from "./CartItems"
-import MainLayout from "@layout/MainLayOut"
-import { ProductAPI } from "@context/Context"
+import MainLayout from "layout/MainLayOut"
+import { ProductAPI } from "context/Context"
 
 const CartView = () => {
   const { cartItems, handleAddToCart } = ProductAPI()
