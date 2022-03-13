@@ -6,6 +6,7 @@ import { ProductAPI } from "@context/Context"
 
 const CartView = () => {
   const { cartItems, handleAddToCart } = ProductAPI()
+
   return (
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>

@@ -3,8 +3,8 @@ import ProductCard from "@components/product-card/ProductCard"
 import PropTypes from "prop-types"
 import { ProductAPI } from "@context/Context"
 
-const ProductItems = ({ onAddToCart }) => {
-  const { products } = ProductAPI()
+const ProductItems = ({ onAddToCart, products }) => {
+  //const { products } = ProductAPI()
   return (
     <div className="grid-wrapper">
       {products.map(product => (

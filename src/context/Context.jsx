@@ -1,5 +1,4 @@
 import React, { useEffect, useState, createContext, useContext } from "react"
-import MainLayout from "@layout/MainLayOut"
 
 const APIContext = createContext()
 
@@ -29,7 +28,7 @@ export const ContextProvider = ({ children }) => {
   const handleAddToCart = product => {
     setCartItems([...cartItems, product])
   }
-
+  /*
   if (loading) {
     return (
       <div>
@@ -37,16 +36,15 @@ export const ContextProvider = ({ children }) => {
       </div>
     )
   }
-
   if (error) {
     return (
       <div>
         <p>Error fetching data </p>
       </div>
     )
-  }
+  }*/
 
-  return <APIContext.Provider value={{ products, cartItems, handleAddToCart }}>{children}</APIContext.Provider>
+  return <APIContext.Provider value={{ products, cartItems, handleAddToCart, loading, error }}>{children}</APIContext.Provider>
 }
 
 export const ProductAPI = () => {
