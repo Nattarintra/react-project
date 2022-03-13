@@ -28,7 +28,7 @@ const ProductView = () => {
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <Container>
-          <ProductItems onAddToCart={handleAddToCart} cartItems={cartItems} products={products} loading={loading} />
+          <ProductItems onAddToCart={handleAddToCart} cartItems={cartItems} products={products} />
         </Container>
       </PageWhiteSpace>
     </MainLayout>
