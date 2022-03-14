@@ -6,21 +6,29 @@ import MainLayout from "layout/MainLayOut"
 import { ProductAPI } from "context/Context"
 
 const ProductView = () => {
-  const { products, cartItems, handleAddToCart, loading, error } = ProductAPI()
+  const { cartItems, loading, error } = ProductAPI()
 
   if (loading) {
     return (
-      <MainLayout>
-        <p>Loading...</p>
+      <MainLayout cartItems={cartItems}>
+        <PageWhiteSpace>
+          <Container>
+            <p>Loading...</p>
+          </Container>
+        </PageWhiteSpace>
       </MainLayout>
     )
   }
 
   if (error) {
     return (
-      <div>
-        <p>Error fetching data </p>
-      </div>
+      <MainLayout cartItems={cartItems}>
+        <PageWhiteSpace>
+          <Container>
+            <p>Error fetching data </p>
+          </Container>
+        </PageWhiteSpace>
+      </MainLayout>
     )
   }
 
@@ -28,7 +36,7 @@ const ProductView = () => {
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <Container>
-          <ProductItems onAddToCart={handleAddToCart} cartItems={cartItems} products={products} />
+          <ProductItems />
         </Container>
       </PageWhiteSpace>
     </MainLayout>

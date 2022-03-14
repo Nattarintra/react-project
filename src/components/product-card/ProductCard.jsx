@@ -1,8 +1,11 @@
 import React from "react"
 import Button from "components/button/Button"
 import PropTypes from "prop-types"
+import { ProductAPI } from "context/Context"
 
-const ProductCard = ({ product, onAddToCart }) => {
+const ProductCard = ({ product }) => {
+  const { handleAddToCart } = ProductAPI()
+
   return (
     <div className="card">
       <div className="content-card-wrap">
@@ -17,12 +20,14 @@ const ProductCard = ({ product, onAddToCart }) => {
         </div>
       </div>
 
-      <Button btnText="add to cart" onClick={() => onAddToCart({ product })} />
+      <Button btnText="add to cart" onClick={() => handleAddToCart({ product })} />
     </div>
   )
 }
 export default ProductCard
 ProductCard.propTypes = {
   image: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  price: PropTypes.number,
+  onClick: PropTypes.func
 }
