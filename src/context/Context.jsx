@@ -3,7 +3,6 @@ import React, { useEffect, useState, createContext, useContext } from "react"
 const APIContext = createContext()
 
 export const ContextProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([])
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
@@ -25,26 +24,7 @@ export const ContextProvider = ({ children }) => {
     fetchProducts()
   }, [])
 
-  const handleAddToCart = product => {
-    setCartItems([...cartItems, product])
-  }
-  /*
-  if (loading) {
-    return (
-      <div>
-        <p>Loading...</p>
-      </div>
-    )
-  }
-  if (error) {
-    return (
-      <div>
-        <p>Error fetching data </p>
-      </div>
-    )
-  }*/
-
-  return <APIContext.Provider value={{ products, cartItems, handleAddToCart, loading, error }}>{children}</APIContext.Provider>
+  return <APIContext.Provider value={{ products, loading, error }}>{children}</APIContext.Provider>
 }
 
 export const ProductAPI = () => {

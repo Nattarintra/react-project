@@ -1,10 +1,10 @@
 import React from "react"
 import Button from "components/button/Button"
 import PropTypes from "prop-types"
-import { ProductAPI } from "context/Context"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const ProductCard = ({ product }) => {
-  const { handleAddToCart } = ProductAPI()
+  const { handleAddToCart } = CartItemsContextAPI()
 
   return (
     <div className="card">

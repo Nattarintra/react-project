@@ -7,20 +7,23 @@ import CssBaseline from "@mui/material/CssBaseline"
 import ProductView from "views/ProductView/index"
 import CartView from "views/CartView"
 import { ContextProvider } from "context/Context"
+import { CartContextProvider } from "context/CartItemsContext"
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider>
         <CssBaseline />
-        <ContextProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<ProductView />} />
-              <Route path="cart" element={<CartView />} />
-            </Routes>
-          </BrowserRouter>
-        </ContextProvider>
+        <CartContextProvider>
+          <ContextProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<ProductView />} />
+                <Route path="cart" element={<CartView />} />
+              </Routes>
+            </BrowserRouter>
+          </ContextProvider>
+        </CartContextProvider>
       </StylesProvider>
     </ThemeProvider>
   )

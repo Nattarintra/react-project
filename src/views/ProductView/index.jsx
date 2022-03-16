@@ -4,9 +4,11 @@ import PageWhiteSpace from "components/PageWhiteSpace"
 import ProductItems from "./ProductItems"
 import MainLayout from "layout/MainLayOut"
 import { ProductAPI } from "context/Context"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const ProductView = () => {
-  const { cartItems, loading, error } = ProductAPI()
+  const { cartItems } = CartItemsContextAPI()
+  const { loading, error } = ProductAPI()
 
   if (loading) {
     return (

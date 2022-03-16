@@ -7,8 +7,11 @@ import Container from "@mui/material/Container"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import AccountCircle from "@mui/icons-material/AccountCircle"
 import Badge from "@mui/material/Badge"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
-const NavBar = ({ cartItems }) => {
+const NavBar = () => {
+  const { cartItems } = CartItemsContextAPI()
+
   console.log(" NavBarQty ", cartItems)
 
   return (

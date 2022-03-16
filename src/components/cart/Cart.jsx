@@ -1,8 +1,11 @@
 import React from "react"
 import Container from "@mui/material/Container"
 import { Link } from "react-router-dom"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
-const Cart = ({ item, cartItems }) => {
+const Cart = ({ item }) => {
+  const { cartItems } = CartItemsContextAPI()
+
   //console.log("my item ", cartItems)
   return (
     <div className="cart-wrapper">

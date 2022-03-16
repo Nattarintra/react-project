@@ -1,8 +1,11 @@
 import React from "react"
 import Cart from "components/cart/Cart"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
-const CartItems = ({ cartItems, onAddToCart }) => {
+const CartItems = () => {
   //console.log(" cart items ", cartItems[0].product.id)
+  const { cartItems } = CartItemsContextAPI()
+
   return (
     <div className="">
       {cartItems.length === 0 ? (
@@ -11,7 +14,7 @@ const CartItems = ({ cartItems, onAddToCart }) => {
         cartItems.map(item => {
           return (
             <div id={item.id} className="" key={item.product.id}>
-              <Cart item={item} onAddToCart={onAddToCart} cartItems={cartItems} />
+              <Cart item={item} />
             </div>
           )
         })
