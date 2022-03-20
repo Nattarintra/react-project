@@ -8,18 +8,16 @@ const Cart = ({ item }) => {
       <Container>
         <div className="cart-inner">
           <div className="cart-img">
-            <img className="image" src={item.product.image} alt={item.product.title} />
+            <img className="image" src={item.image} alt={item.title} />
           </div>
           <div className="cart-center">
-            <div className="cart-title">{item.product.title}</div>
+            <div className="cart-title">{item.title}</div>
             <div className="cart-qty-info">
               <Link to="" className="cart-btn decrease">
                 -
               </Link>
-              {/*
-              Todo summary of product qty 
-              */}
-              <div className="cart-btn cart-qty">{item.product.qty}</div>
+
+              <div className="cart-btn cart-qty">{item.qty}</div>
 
               <Link to="" className="cart-btn increase">
                 +
@@ -28,7 +26,7 @@ const Cart = ({ item }) => {
                 x
               </Link>
             </div>
-            <div className="cart-btn cart-price">{<p>{item.product.price} EUR</p>}</div>
+            <div className="cart-btn cart-price">{<p>{item.price} EUR</p>}</div>
           </div>
         </div>
         <div className="cart-total">Total</div>

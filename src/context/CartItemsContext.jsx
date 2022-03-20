@@ -8,16 +8,21 @@ export const CartContextProvider = ({ children }) => {
   console.log("cartItems", cartItems)
 
   const handleAddToCart = product => {
-    const foundProduct = cartItems.filter(item => item.id === product.id)
+    const updatedCart = [...cartItems]
+    const findIndex = updatedCart.findIndex(item => item.id === product.id)
 
-    if (foundProduct) {
-      foundProduct.product.qty = foundProduct.product.qty + 1 // type err can not read qty
-      console.log(foundProduct.product.qty)
-      setCartItems([...cartItems, foundProduct])
+    if (findIndex < 0) {
+      //console.log("findindex", findIndex)
+      updatedCart.push(product)
     } else {
-      product.product.qty = product.product.qty + 1
-      setCartItems([...cartItems, product])
+      const updatedItem = { ...updatedCart[findIndex] }
+      //console.log("updatedItem ", updatedItem)
+      updatedItem.qty++
+      updatedCart[findIndex] = updatedItem
     }
+
+    console.log("updated Cart", updatedCart)
+    setCartItems(updatedCart)
   }
 
   return <CartItemsContext.Provider value={{ cartItems, handleAddToCart }}>{children}</CartItemsContext.Provider>

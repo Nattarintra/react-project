@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
         </div>
       </div>
 
-      <Button btnText="add to cart" onClick={() => handleAddToCart({ product })} />
+      <Button btnText="add to cart" onClick={() => handleAddToCart(product)} />
     </div>
   )
 }

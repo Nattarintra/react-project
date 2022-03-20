@@ -14,12 +14,10 @@ export const ContextProvider = ({ children }) => {
       try {
         const reponse = await fetch("https://fakestoreapi.com/products")
         const data = await reponse.json()
-        //console.log("data ", data)
         const newProducts = data.map(product => {
-          const qty = (product.qty = 0)
+          const qty = (product.qty = 1)
           return { ...product, qty }
         })
-        //console.log("new pds ", newProducts)
         setProducts(newProducts)
       } catch (e) {
         setError(true)
