@@ -7,14 +7,20 @@ export const ContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
+  // Fetching products
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true)
       try {
         const reponse = await fetch("https://fakestoreapi.com/products")
         const data = await reponse.json()
-
-        setProducts(data)
+        //console.log("data ", data)
+        const newProducts = data.map(product => {
+          const qty = (product.qty = 0)
+          return { ...product, qty }
+        })
+        //console.log("new pds ", newProducts)
+        setProducts(newProducts)
       } catch (e) {
         setError(true)
       } finally {

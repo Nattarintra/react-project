@@ -1,12 +1,8 @@
 import React from "react"
 import Container from "@mui/material/Container"
 import { Link } from "react-router-dom"
-import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const Cart = ({ item }) => {
-  const { cartItems } = CartItemsContextAPI()
-
-  //console.log("my item ", cartItems)
   return (
     <div className="cart-wrapper">
       <Container>
@@ -20,7 +16,10 @@ const Cart = ({ item }) => {
               <Link to="" className="cart-btn decrease">
                 -
               </Link>
-              <div className="cart-btn cart-qty">{cartItems.length}</div>
+              {/*
+              Todo summary of product qty 
+              */}
+              <div className="cart-btn cart-qty">{item.product.qty}</div>
 
               <Link to="" className="cart-btn increase">
                 +
