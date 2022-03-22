@@ -3,7 +3,6 @@ import Cart from "components/cart/Cart"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const CartItems = () => {
-  //console.log(" cart items ", cartItems[0].product.id)
   const { cartItems } = CartItemsContextAPI()
 
   return (

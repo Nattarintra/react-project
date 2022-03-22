@@ -1,8 +1,11 @@
 import React from "react"
 import Container from "@mui/material/Container"
 import { Link } from "react-router-dom"
+import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const Cart = ({ item }) => {
+  const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem } = CartItemsContextAPI()
+  console.log("item id", item.id)
   return (
     <div className="cart-wrapper">
       <Container>
@@ -13,16 +16,16 @@ const Cart = ({ item }) => {
           <div className="cart-center">
             <div className="cart-title">{item.title}</div>
             <div className="cart-qty-info">
-              <Link to="" className="cart-btn decrease">
+              <Link to="" className="cart-btn decrease" onClick={() => handleDecreaseItem(item)}>
                 -
               </Link>
 
               <div className="cart-btn cart-qty">{item.qty}</div>
 
-              <Link to="" className="cart-btn increase">
+              <Link to="" className="cart-btn increase" onClick={() => handleIncreaseItem(item)}>
                 +
               </Link>
-              <Link to="" className="cart-btn delete">
+              <Link to="" className="cart-btn delete" onClick={() => handleDeleteItem(item)}>
                 x
               </Link>
             </div>

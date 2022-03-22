@@ -5,8 +5,6 @@ const CartItemsContext = createContext()
 export const CartContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([])
 
-  console.log("cartItems", cartItems)
-
   const handleAddToCart = product => {
     const updatedCart = [...cartItems]
     const findIndex = updatedCart.findIndex(item => item.id === product.id)
@@ -21,11 +19,39 @@ export const CartContextProvider = ({ children }) => {
       updatedCart[findIndex] = updatedItem
     }
 
-    console.log("updated Cart", updatedCart)
+    //console.log("updated Cart", updatedCart)
     setCartItems(updatedCart)
   }
 
-  return <CartItemsContext.Provider value={{ cartItems, handleAddToCart }}>{children}</CartItemsContext.Provider>
+  //INCREASE PRODUCT'S ITEM IN CART
+  const handleIncreaseItem = ({ id }) => {
+    cartItems.map(item => {
+      if (item.id === id) {
+        item.qty += 1
+      }
+      setCartItems([...cartItems])
+    })
+  }
+
+  //DECREASE PRODUCT'S ITEM IN CART
+  const handleDecreaseItem = ({ id }) => {
+    cartItems.map(item => {
+      if (item.id === id) {
+        item.qty -= 1
+      }
+      setCartItems([...cartItems])
+    })
+  }
+
+  //REMOVE PRODUCT FROM THE CART
+  const handleDeleteItem = ({ id }) => {
+    if (window.confirm("Are you sure?")) {
+      const deleteItem = cartItems.filter(item => item.id !== id)
+      setCartItems(deleteItem)
+    }
+  }
+
+  return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem }}>{children}</CartItemsContext.Provider>
 }
 
 export const CartItemsContextAPI = () => {
