@@ -3,7 +3,7 @@ import Cart from "components/cart/Cart"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const CartItems = () => {
-  const { cartItems } = CartItemsContextAPI()
+  const { cartItems, total } = CartItemsContextAPI()
 
   return (
     <div className="">

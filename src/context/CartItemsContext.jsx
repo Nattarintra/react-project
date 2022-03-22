@@ -1,9 +1,10 @@
-import React, { useState, createContext, useContext } from "react"
+import React, { useState, createContext, useContext, useEffect } from "react"
 
 const CartItemsContext = createContext()
 
 export const CartContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([])
+  const [total, setTotal] = useState(0)
 
   const handleAddToCart = product => {
     const updatedCart = [...cartItems]
@@ -51,7 +52,18 @@ export const CartContextProvider = ({ children }) => {
     }
   }
 
-  return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem }}>{children}</CartItemsContext.Provider>
+  //GET THE TOTAL PRICE
+  useEffect(() => {
+    const getTotal = () => {
+      const result = cartItems.reduce((prev, item) => {
+        return prev + item.price * item.qty
+      }, 0)
+      setTotal(result)
+    }
+    getTotal()
+  }, [handleIncreaseItem, handleDecreaseItem])
+
+  return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total }}>{children}</CartItemsContext.Provider>
 }
 
 export const CartItemsContextAPI = () => {

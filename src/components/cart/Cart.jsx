@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const Cart = ({ item }) => {
-  const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem } = CartItemsContextAPI()
+  const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total } = CartItemsContextAPI()
   console.log("item id", item.id)
   return (
     <div className="cart-wrapper">
@@ -29,10 +29,9 @@ const Cart = ({ item }) => {
                 x
               </Link>
             </div>
-            <div className="cart-btn cart-price">{<p>{item.price} EUR</p>}</div>
+            <div className="cart-btn cart-price">{Math.round(item.price)}</div>
           </div>
         </div>
-        <div className="cart-total">Total</div>
       </Container>
     </div>
   )
