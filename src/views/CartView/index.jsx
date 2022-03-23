@@ -5,13 +5,12 @@ import MainLayout from "layout/MainLayOut"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const CartView = () => {
-  const { cartItems, total } = CartItemsContextAPI()
+  const { cartItems } = CartItemsContextAPI()
 
   return (
     <MainLayout cartItems={cartItems}>
       <PageWhiteSpace>
         <CartItems />
-        <div className="cart-total">Total:{Math.round(total)} EUR</div>
       </PageWhiteSpace>
     </MainLayout>
   )

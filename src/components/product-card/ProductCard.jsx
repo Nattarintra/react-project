@@ -16,7 +16,9 @@ const ProductCard = ({ product }) => {
           <div className="title-card">
             <p>{product.title}</p>
           </div>
-          <div className="price-card">{<p>Price {product.price} EUR</p>}</div>
+          <div className="price-card">
+            <p>Price {Math.round(product.price)} EUR</p>
+          </div>
         </div>
       </div>
 

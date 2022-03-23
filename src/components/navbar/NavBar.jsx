@@ -12,7 +12,7 @@ import { CartItemsContextAPI } from "context/CartItemsContext"
 const NavBar = () => {
   const { cartItems } = CartItemsContextAPI()
 
-  console.log(" NavBarQty ", cartItems)
+  //console.log(" NavBarQty ", cartItems)
 
   return (
     <>

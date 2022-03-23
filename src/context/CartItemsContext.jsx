@@ -25,27 +25,31 @@ export const CartContextProvider = ({ children }) => {
   }
 
   //INCREASE PRODUCT'S ITEM IN CART
-  const handleIncreaseItem = ({ id }) => {
-    cartItems.map(item => {
+  const handleIncreaseItem = id => {
+    //console.log("id", id)
+    cartItems.forEach(item => {
       if (item.id === id) {
         item.qty += 1
       }
+
       setCartItems([...cartItems])
     })
   }
 
   //DECREASE PRODUCT'S ITEM IN CART
-  const handleDecreaseItem = ({ id }) => {
-    cartItems.map(item => {
+  const handleDecreaseItem = id => {
+    cartItems.forEach(item => {
+      console.log(item)
       if (item.id === id) {
         item.qty -= 1
       }
+
       setCartItems([...cartItems])
     })
   }
 
   //REMOVE PRODUCT FROM THE CART
-  const handleDeleteItem = ({ id }) => {
+  const handleDeleteItem = id => {
     if (window.confirm("Are you sure?")) {
       const deleteItem = cartItems.filter(item => item.id !== id)
       setCartItems(deleteItem)
@@ -61,7 +65,7 @@ export const CartContextProvider = ({ children }) => {
       setTotal(result)
     }
     getTotal()
-  }, [handleIncreaseItem, handleDecreaseItem])
+  })
 
   return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total }}>{children}</CartItemsContext.Provider>
 }

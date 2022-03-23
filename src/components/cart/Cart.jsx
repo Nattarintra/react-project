@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const Cart = ({ item }) => {
-  const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total } = CartItemsContextAPI()
-  console.log("item id", item.id)
+  const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem } = CartItemsContextAPI()
+  //console.log("item id", item.id)
   return (
     <div className="cart-wrapper">
       <Container>
@@ -16,16 +16,16 @@ const Cart = ({ item }) => {
           <div className="cart-center">
             <div className="cart-title">{item.title}</div>
             <div className="cart-qty-info">
-              <Link to="" className="cart-btn decrease" onClick={() => handleDecreaseItem(item)}>
+              <button to="" className="cart-btn decrease" disabled={item.qty < 2} onClick={() => handleDecreaseItem(item.id)}>
                 -
-              </Link>
+              </button>
 
               <div className="cart-btn cart-qty">{item.qty}</div>
 
-              <Link to="" className="cart-btn increase" onClick={() => handleIncreaseItem(item)}>
+              <button to="" className="cart-btn increase" onClick={() => handleIncreaseItem(item.id)}>
                 +
-              </Link>
-              <Link to="" className="cart-btn delete" onClick={() => handleDeleteItem(item)}>
+              </button>
+              <Link to="" className="cart-btn delete" onClick={() => handleDeleteItem(item.id)}>
                 x
               </Link>
             </div>
