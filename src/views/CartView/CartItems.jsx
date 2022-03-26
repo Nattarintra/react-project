@@ -1,5 +1,6 @@
 import React from "react"
 import Cart from "components/cart/Cart"
+import Container from "@mui/material/Container"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const CartItems = () => {
@@ -8,7 +9,9 @@ const CartItems = () => {
   return (
     <div className="">
       {cartItems.length === 0 ? (
-        <div className="emptyCart">Your cart is empty</div>
+        <Container>
+          <div className="emptyCart">Your cart is empty</div>
+        </Container>
       ) : (
         cartItems.map(item => {
           //console.log("item id ", item)

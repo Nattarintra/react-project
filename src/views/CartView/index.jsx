@@ -2,15 +2,15 @@ import React from "react"
 import PageWhiteSpace from "components/PageWhiteSpace"
 import CartItems from "./CartItems"
 import MainLayout from "layout/MainLayOut"
-import { CartItemsContextAPI } from "context/CartItemsContext"
+import Container from "@mui/material/Container"
 
 const CartView = () => {
-  const { cartItems } = CartItemsContextAPI()
-
   return (
-    <MainLayout cartItems={cartItems}>
+    <MainLayout>
       <PageWhiteSpace>
-        <CartItems />
+        <Container>
+          <CartItems />
+        </Container>
       </PageWhiteSpace>
     </MainLayout>
   )

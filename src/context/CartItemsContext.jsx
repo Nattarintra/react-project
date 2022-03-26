@@ -6,6 +6,7 @@ export const CartContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([])
   const [total, setTotal] = useState(0)
 
+  // HANDLE ADD PRODUCT TO CART
   const handleAddToCart = product => {
     const updatedCart = [...cartItems]
     const findIndex = updatedCart.findIndex(item => item.id === product.id)
@@ -65,7 +66,7 @@ export const CartContextProvider = ({ children }) => {
       setTotal(result)
     }
     getTotal()
-  })
+  }, [])
 
   return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total }}>{children}</CartItemsContext.Provider>
 }

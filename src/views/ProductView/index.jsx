@@ -4,15 +4,13 @@ import PageWhiteSpace from "components/PageWhiteSpace"
 import ProductItems from "./ProductItems"
 import MainLayout from "layout/MainLayOut"
 import { ProductAPI } from "context/Context"
-import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const ProductView = () => {
-  const { cartItems } = CartItemsContextAPI()
   const { loading, error } = ProductAPI()
 
   if (loading) {
     return (
-      <MainLayout cartItems={cartItems}>
+      <MainLayout>
         <PageWhiteSpace>
           <Container>
             <p>Loading...</p>
@@ -24,7 +22,7 @@ const ProductView = () => {
 
   if (error) {
     return (
-      <MainLayout cartItems={cartItems}>
+      <MainLayout>
         <PageWhiteSpace>
           <Container>
             <p>Error fetching data </p>
@@ -35,7 +33,7 @@ const ProductView = () => {
   }
 
   return (
-    <MainLayout cartItems={cartItems}>
+    <MainLayout>
       <PageWhiteSpace>
         <Container>
           <ProductItems />
