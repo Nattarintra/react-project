@@ -5,7 +5,7 @@ import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const CartItems = () => {
   const { cartItems, total } = CartItemsContextAPI()
-  // console.log("cart items ", cartItems)
+
   return (
     <div className="">
       {cartItems.length === 0 ? (
@@ -14,7 +14,6 @@ const CartItems = () => {
         </Container>
       ) : (
         cartItems.map(item => {
-          //console.log("item id ", item)
           return (
             <div id={item.id} className="" key={item.id}>
               <Cart item={item} />

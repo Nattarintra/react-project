@@ -12,22 +12,19 @@ export const CartContextProvider = ({ children }) => {
     const findIndex = updatedCart.findIndex(item => item.id === product.id)
 
     if (findIndex < 0) {
-      //console.log("findindex", findIndex)
       updatedCart.push(product)
     } else {
       const updatedItem = { ...updatedCart[findIndex] }
-      //console.log("updatedItem ", updatedItem)
+
       updatedItem.qty++
       updatedCart[findIndex] = updatedItem
     }
 
-    //console.log("updated Cart", updatedCart)
     setCartItems(updatedCart)
   }
 
   //INCREASE PRODUCT'S ITEM IN CART
   const handleIncreaseItem = id => {
-    //console.log("id", id)
     cartItems.forEach(item => {
       if (item.id === id) {
         item.qty += 1
@@ -40,7 +37,6 @@ export const CartContextProvider = ({ children }) => {
   //DECREASE PRODUCT'S ITEM IN CART
   const handleDecreaseItem = id => {
     cartItems.forEach(item => {
-      console.log(item)
       if (item.id === id) {
         item.qty -= 1
       }

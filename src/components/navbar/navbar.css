@@ -7,13 +7,11 @@
   text-decoration: none;
 }
 .nav-inner {
-  /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
 }
 
 .nav-icon-wrapper {
-  /* border: 1px dashed darksalmon; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +23,4 @@
 .menu_active {
   display: flex;
   flex-direction: column;
-}
-.menu {
-  display: none;
 }

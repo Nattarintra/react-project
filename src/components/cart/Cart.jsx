@@ -5,7 +5,7 @@ import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const Cart = ({ item }) => {
   const { handleIncreaseItem, handleDecreaseItem, handleDeleteItem } = CartItemsContextAPI()
-  //console.log("item id", item.id)
+
   return (
     <div className="cart-wrapper">
       <Container>

@@ -2,17 +2,13 @@ import React from "react"
 
 import { Link } from "react-router-dom"
 
-import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
-import AccountCircle from "@mui/icons-material/AccountCircle"
 import Badge from "@mui/material/Badge"
 import { CartItemsContextAPI } from "context/CartItemsContext"
 
 const NavBar = () => {
   const { cartItems } = CartItemsContextAPI()
-
-  //console.log(" NavBarQty ", cartItems)
 
   return (
     <>
@@ -30,17 +26,6 @@ const NavBar = () => {
                   <ShoppingCartIcon />
                 </Link>
               </Badge>
-
-              <Link to="" className="icon-btn accout-circle">
-                <AccountCircle />
-              </Link>
-              <div className="menu ">
-                <Link to="">Profile</Link>
-                <Link to="">My account</Link>
-              </div>
-              <Link to="" className="icon-btn menuIcon">
-                <MenuIcon />
-              </Link>
             </div>
           </div>
         </Container>
