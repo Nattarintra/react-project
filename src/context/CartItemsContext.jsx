@@ -62,7 +62,7 @@ export const CartContextProvider = ({ children }) => {
       setTotal(result)
     }
     getTotal()
-  }, [])
+  }, [cartItems])
 
   return <CartItemsContext.Provider value={{ cartItems, handleAddToCart, handleIncreaseItem, handleDecreaseItem, handleDeleteItem, total }}>{children}</CartItemsContext.Provider>
 }
