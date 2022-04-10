@@ -16,18 +16,18 @@ const Cart = ({ item }) => {
           <div className="cart-center">
             <div className="cart-title">{item.title}</div>
             <div className="cart-qty-info">
-              <button to="" className="cart-btn decrease" disabled={item.qty < 2} onClick={() => handleDecreaseItem(item.id)}>
+              <button className="cart-btn decrease" disabled={item.qty < 2} onClick={() => handleDecreaseItem(item.id)}>
                 -
               </button>
 
               <div className="cart-btn cart-qty">{item.qty}</div>
 
-              <button to="" className="cart-btn increase" onClick={() => handleIncreaseItem(item.id)}>
+              <button className="cart-btn increase" onClick={() => handleIncreaseItem(item.id)}>
                 +
               </button>
-              <Link to="" className="cart-btn delete" onClick={() => handleDeleteItem(item.id)}>
+              <button className="cart-btn delete" onClick={() => handleDeleteItem(item.id)}>
                 x
-              </Link>
+              </button>
             </div>
             <div className="cart-btn cart-price">{Math.round(item.price)}</div>
           </div>
